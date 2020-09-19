@@ -12,7 +12,7 @@ from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
 user = 'admin'
-password = 'jyt987654'
+password = '123456'
 
 
 class TestJybLogin(unittest.TestCase):
