@@ -42,12 +42,12 @@ class TestJybLogin(unittest.TestCase):
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
-        except NoSuchElementException as e: return False
+        except NoSuchElementException as dummy_e: return False
         return True
     
     def is_alert_present(self):
         try: self.driver.switch_to_alert()
-        except NoAlertPresentException as e: return False
+        except NoAlertPresentException as dummy_e: return False
         return True
     
     def close_alert_and_get_its_text(self):
